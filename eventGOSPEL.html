@@ -3,8 +3,8 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
- 		<link rel="shortcut icon" href="images/favicon.png"/>
-		<title>Event Photo | LewiMEDIA - Music Band Event</title>
+ 		<!--<link rel="shortcut icon" href="images/favicon.png"/>-->
+		<title>Event List | LewiMEDIA - Music Band Event</title>
 
 		<link rel="stylesheet" href="css/settings.css" type="text/css" media="all"/>
 		<link rel="stylesheet" href="css/widget-calendar-full.css" type="text/css" media="all"/>
@@ -30,27 +30,8 @@
             <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
-	
-	<!--favicon code starts here -->
-       <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-		<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-		<link rel="manifest" href="/manifest.json">
-		<meta name="msapplication-TileColor" content="#ffffff">
-		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-		<meta name="theme-color" content="#ffffff">
-	  <!-- end favicon code -->    
-	
+        
+      -
 	</head>
 	<body>
 		<!--preloader-->
@@ -103,8 +84,8 @@
 									<li class="current-menu-item menu-item-has-children">
 										<a href="#">Events</a>
 										<ul class="sub-menu">
-											<li><a href="event.html">Event List</a></li>
-											<li class="current-menu-item"><a href="event-photo.html">Event Photo</a></li>
+											<li class="current-menu-item"><a href="event.html">Event List</a></li>
+											<li><a href="event-photo.html">Event Photo</a></li>
 											<li><a href="event-detail.html">Event Detail</a></li>
 											<!--<li><a href="archive-event.html">Archive Event</a></li>-->
 										</ul>
@@ -113,7 +94,7 @@
 										<a href="#">Albums</a>
 										<ul class="sub-menu">
 											<li><a href="album.html">Albums</a></li>
-											<li><a href="album-detail.html">Albums Gospel</a></li>
+											<li><a href="album-detail.html">Singles</a></li>
 										</ul>
 									</li>
 									<li class="menu-item-has-children">
@@ -151,7 +132,7 @@
 				<div class="container">
 					<div class="noo-page-breadcrumb">
 						<div class="breadcrumb-wrap">
- 							<span><a href="#" class="home">Home</a></span><i>&#047;</i><span><span>Events Photo</span></span>
+ 							<span><a href="#" class="home">Home</a></span><i>&#047;</i> <span><span>Events</span></span>
  						</div>
 					</div>
 				</div> 
@@ -160,22 +141,21 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-9">
-							<div id="tribe-events">
+							<div id="tribe-events" class="tribe-events-uses-geolocation">
 								<div class="tribe-clearfix">
- 									<div style="border:thin" id="tribe-events-bar" class="tribe-events-uses-geolocation">
-										<div class="well well-lg" ><h1 style="align-content: center">Here We GO</h1></div>
-											<!--<form id="tribe-bar-form">
+ 									<div id="tribe-events-bar">
+										<!--<div class="well well-sm"><h1 class="text-center">Events</h1></div>-->
+											<form id="tribe-bar-form">
  											<div id="tribe-bar-collapse-toggle">
-												Here We GO<span class="tribe-bar-toggle-arrow"></span>
+												Find Events<span class="tribe-bar-toggle-arrow"></span>
 											</div>
-											
  											<div id="tribe-bar-views">
 												<div class="tribe-bar-views-inner tribe-clearfix">
 													<label>View As</label>
 													<ul class="tribe-bar-views-list">
-														<li class="tribe-bar-views-option tribe-bar-views-option-photo tribe-bar-active">
+														<li class="tribe-bar-views-option tribe-bar-views-option-list tribe-bar-active">
 															<a href="#">
-																<span class="tribe-icon-photo">Photo </span>
+																<span class="tribe-icon-list">List </span>
 															</a>
 														</li>
 													</ul>
@@ -200,141 +180,171 @@
 													</div>
  												</div>
  											</div> 
-										</form>-->
- 									</div>
- 									<div id="tribe-events-photo-events" class="tribe-events-list tribe-events-photo">
- 										<div class="tribe-events-loop hfeed vcalendar tribe-clearfix isotope">
-											<div class="type-tribe_events tribe-clearfix tribe-events-photo-event isotope-item">
+										</form>
+ 									</div> 
+ 									<div class="tribe-events-list">
+ 										<div class="tribe-events-loop vcalendar">
+											<div class="type-tribe_events tribe-clearfix">
  												<h2 class="tribe-events-list-event-title">
-													<a href="#">Kampala Amphitheatre </a>
+													<a href="#">LewiMedia Event</a>
 												</h2>
 												<div class="noo-tribe-events-image">
-													<!--<span class="noo-attr-style">FREE</span> --> 
+													<!--<span class="noo-attr-style">FREE</span>-->  
 													<div class="tribe-events-event-meta vcard">
 														<div class="author location">
  															<div class="time-details">
 																<i class="fa fa-calendar"></i>
-																<span class="date-start">August 1-8:00 pm</span>
+																<span class="date-start">AUGUST 12-8:00 pm</span>
 																-
 																<span class="date-end">10:00 pm</span>
 															</div>
  															<div class="tribe-events-venue-details">
 																<i class="fa fa-map-marker"></i>
-																<span class="author"><a href="#">Sheraton Hotel </a></span>, 
+																<span class="author"><a href="#">Mukono Centre Hotel</a></span>, 
+																<span class="street-address">Mukono</span>
+																<a class="tribe-events-gmap" href="http://maps.google.com/maps?f=q&#038;source=s_q&#038;hl=en&#038;geocode=&#038;q=NewYork" title="Click to view a Google Map" target="_blank">+ Google Map</a>
+															</div>  
+														</div>
+													</div> 
+ 													<div class="tribe-events-event-image">
+ 														<a>
+ 															<img width="1280" height="853" src="images/event/ImageMusic1.png" alt="event5"/>
+ 														</a>
+ 													</div>
+ 												</div>
+												<div class="tribe-events-list-event-description">
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+													<a data-toggle="collapse" data-target="#readMore1" class="tribe-events-read-more">READ MORE</a>
+												</div> 
+												
+												
+												<div id="readMore1" class="collapse"> <br>
+         
+										<p class="bg-primary">You Will Love This</p>
+										<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiLorem ipsum dolor sit amet, consectetur adipiscing.Elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiLorem ipsum dolor sit amet, consectetur adipiscing. </p>
+</div>
+												
+												
+											</div>
+											<div class="type-tribe_events tribe-clearfix">
+ 												<h2 class="tribe-events-list-event-title">
+													<a href="#">LewiMedia Event </a>
+												</h2>
+												<div class="noo-tribe-events-image">
+													<!--<span class="noo-attr-style">FREE</span>-->  
+													<div class="tribe-events-event-meta vcard">
+														<div class="author location">
+ 															<div class="time-details">
+																<i class="fa fa-calendar"></i>
+																<span class="date-start">August 12-9:30 pm</span>
+																-
+																<span class="date-end">10:30 pm</span>
+															</div>
+ 															<div class="tribe-events-venue-details">
+																<i class="fa fa-map-marker"></i>
+																<span class="author"><a href="#">Mukono Centre Hotel</a></span>, 
+																<span class="street-address">Mukono</span>
+																<a class="tribe-events-gmap" href="http://maps.google.com/maps?f=q&#038;source=s_q&#038;hl=en&#038;geocode=&#038;q=NewYork" title="Click to view a Google Map" target="_blank">+ Google Map</a>
+															</div>  
+														</div>
+													</div> 
+ 													<div class="tribe-events-event-image">
+ 														<a>
+ 															<img width="1280" height="853" src="images/event/LenaPrice3.jpeg" alt="event3"/>
+ 														</a>
+ 													</div>
+ 												</div>
+												<div class="tribe-events-list-event-description">
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+													<a data-toggle="collapse" data-target="#readMore2" class="tribe-events-read-more">READ MORE</a>
+												</div>
+												
+												
+												<div id="readMore2" class="collapse"> <br>
+         
+										<p class="bg-primary">They Love To Sing and Dance</p>
+										<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiLorem ipsum dolor sit amet, consectetur adipiscing.Elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiLorem ipsum dolor sit amet, consectetur adipiscing. </p>
+</div>
+												
+												
+											</div>
+ 											<div class="type-tribe_events tribe-clearfix">
+ 												<h2 class="tribe-events-list-event-title">
+													<a href="#">LewiMedia Festival </a>
+												</h2>
+												<div class="noo-tribe-events-image">
+													<div class="tribe-events-event-meta vcard">
+														<div class="author location">
+ 															<div class="time-details">
+																<i class="fa fa-calendar"></i>
+																<span class="date-start">July 29-8:00 am</span>
+																- 5:00 pm</span>
+															</div>
+ 															<div class="tribe-events-venue-details">
+																<i class="fa fa-map-marker"></i>
+																<span class="author"><a href="#">Makerere University</a></span>, 
+																<span class="street-address">Makerere</span>
+																<a class="tribe-events-gmap" href="http://maps.google.com/maps?f=q&#038;source=s_q&#038;hl=en&#038;geocode=&#038;q=NewYork" title="Click to view a Google Map" target="_blank">+ Google Map</a>
+															</div>  
+														</div>
+													</div> 
+ 													<div class="tribe-events-event-image">
+ 														<a>
+ 															<img width="1280" height="853" src="images/event/Imagemusic4.jpg" alt="event13"/>
+ 														</a>
+ 													</div>
+ 												</div>
+												<div class="tribe-events-list-event-description">
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+													<a data-toggle="collapse" data-target="#readMore3" class="tribe-events-read-more">READ MORE</a>
+												</div>
+											
+												<div id="readMore3" class="collapse"> <br>
+         
+										<p class="bg-primary">You Will Enjoy</p>
+										<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiLorem ipsum dolor sit amet, consectetur adipiscing.Elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiLorem ipsum dolor sit amet, consectetur adipiscing. </p>
+										</div>
+													
+												
+											</div>
+											<div class="type-tribe_events tribe-clearfix">
+ 												<h2 class="tribe-events-list-event-title">
+													<a href="#">Kampala Amphitheater </a>
+												</h2>
+												<div class="noo-tribe-events-image">
+													<div class="tribe-events-event-meta vcard">
+														<div class="author location">
+ 															<div class="time-details">
+																<i class="fa fa-calendar"></i>
+																<span class="date-start">July 29-8:00 am</span>
+																-
+																<span class="date-end">9:00 pm</span>
+															</div>
+ 															<div class="tribe-events-venue-details">
+																<i class="fa fa-map-marker"></i>
+																<span class="author"><a href="#">Kampala Amphitheater</a></span>, 
 																<span class="street-address">Kampala</span>
 																<a class="tribe-events-gmap" href="http://maps.google.com/maps?f=q&#038;source=s_q&#038;hl=en&#038;geocode=&#038;q=NewYork" title="Click to view a Google Map" target="_blank">+ Google Map</a>
 															</div>  
 														</div>
 													</div> 
  													<div class="tribe-events-event-image">
- 														<a href="#">
- 															<img width="1280" height="853" src="images/event/event-thumb-420x315.jpg" alt="event5"/>
+ 														<a>
+ 															<img width="1280" height="853" src="images/event/LenaPrice2.png" alt="event10"/>
  														</a>
  													</div>
  												</div>
 												<div class="tribe-events-list-event-description">
 													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-													<a href="#" class="tribe-events-read-more">READ MORE</a>
-												</div> 
-											</div>
-											<div class="type-tribe_events tribe-clearfix tribe-events-photo-event isotope-item">
- 												<h2 class="tribe-events-list-event-title">
-													<a href="#">Mukono gallery cafe </a>
-												</h2>
-												<div class="noo-tribe-events-image">
-													<!--<span class="noo-attr-style">FREE</span>  -->
-													<div class="tribe-events-event-meta vcard">
-														<div class="author location">
- 															<div class="time-details">
-																<i class="fa fa-calendar"></i>
-																<span class="date-start">June 1-9:30 pm</span>
-																-
-																<span class="date-end">October 31-10:30 pm</span>
-															</div>
- 															<div class="tribe-events-venue-details">
-																<i class="fa fa-map-marker"></i>
-																<span class="author"><a href="#">Gramercy Park Hotel</a></span>, 
-																<span class="street-address">NewYork</span>
-																<a class="tribe-events-gmap" href="http://maps.google.com/maps?f=q&#038;source=s_q&#038;hl=en&#038;geocode=&#038;q=NewYork" title="Click to view a Google Map" target="_blank">+ Google Map</a>
-															</div>  
-														</div>
-													</div> 
- 													<div class="tribe-events-event-image">
- 														<a href="#">
- 															<img width="1280" height="853" src="images/event/event-thumb-420x315.jpg" alt="event3"/>
- 														</a>
- 													</div>
- 												</div>
-												<div class="tribe-events-list-event-description">
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-													<a href="#" class="tribe-events-read-more">READ MORE</a>
+													<a data-toggle="collapse" data-target="#readMore4" class="tribe-events-read-more">READ MORE</a>
 												</div>
-											</div>
-											<div class="clearfix"></div>
- 											<div class="type-tribe_events tribe-clearfix tribe-events-photo-event isotope-item">
- 												<h2 class="tribe-events-list-event-title">
-													<a href="#">Ultra Music Festival </a>
-												</h2>
-												<div class="noo-tribe-events-image">
-													<div class="tribe-events-event-meta vcard">
-														<div class="author location">
- 															<div class="time-details">
-																<i class="fa fa-calendar"></i>
-																<span class="date-start">June 3-8:00 am</span>
-																-
-																<span class="date-end">November 30-5:00 pm</span>
-															</div>
- 															<div class="tribe-events-venue-details">
-																<i class="fa fa-map-marker"></i>
-																<span class="author"><a href="#">Gramercy Park Hotel</a></span>, 
-																<span class="street-address">NewYork</span>
-																<a class="tribe-events-gmap" href="http://maps.google.com/maps?f=q&#038;source=s_q&#038;hl=en&#038;geocode=&#038;q=NewYork" title="Click to view a Google Map" target="_blank">+ Google Map</a>
-															</div>  
-														</div>
-													</div> 
- 													<div class="tribe-events-event-image">
- 														<a href="#">
- 															<img width="1280" height="853" src="images/event/event-thumb-420x315.jpg" alt="event13"/>
- 														</a>
- 													</div>
- 												</div>
-												<div class="tribe-events-list-event-description">
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-													<a href="#" class="tribe-events-read-more">READ MORE</a>
-												</div>
-											</div>
-											<div class="type-tribe_events tribe-clearfix tribe-events-photo-event isotope-item">
- 												<h2 class="tribe-events-list-event-title">
-													<a href="#">The Gorge Amphitheater </a>
-												</h2>
-												<div class="noo-tribe-events-image">
-													<div class="tribe-events-event-meta vcard">
-														<div class="author location">
- 															<div class="time-details">
-																<i class="fa fa-calendar"></i>
-																<span class="date-start">June 5-8:00 pm</span>
-																-
-																<span class="date-end">October 31-9:00 pm</span>
-															</div>
- 															<div class="tribe-events-venue-details">
-																<i class="fa fa-map-marker"></i>
-																<span class="author"><a href="#">Gramercy Park Hotel</a></span>, 
-																<span class="street-address">NewYork</span>
-																<a class="tribe-events-gmap" href="http://maps.google.com/maps?f=q&#038;source=s_q&#038;hl=en&#038;geocode=&#038;q=NewYork" title="Click to view a Google Map" target="_blank">+ Google Map</a>
-															</div>  
-														</div>
-													</div> 
- 													<div class="tribe-events-event-image">
- 														<a href="#">
- 															<img width="1280" height="853" src="images/event/event-thumb-420x315.jpg" alt="event10"/>
- 														</a>
- 													</div>
- 												</div>
-												<div class="tribe-events-list-event-description">
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-													<a href="#" class="tribe-events-read-more">READ MORE</a>
-												</div>
-											</div>
+												
+												<div id="readMore4" class="collapse"> <br>
+         
+										<p class="bg-primary">You Will Enjoy</p>
+										<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiLorem ipsum dolor sit amet, consectetur adipiscing.Elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiLorem ipsum dolor sit amet, consectetur adipiscing. </p>
+										</div>
+									</div>
  										</div>
 										<div class="pagination list-center">
 											<span class="page-numbers current">1</span>
@@ -354,7 +364,7 @@
 							<div class="widget widget_calendar">
 								<div id="calendar_wrap">
 									<table id="wp-calendar">
-										<caption>October 2017</caption>
+										<caption>July 2017</caption>
 										<thead>
 											<tr>
 												<th scope="col" title="Monday">M</th>
@@ -438,8 +448,8 @@
 				<div class="colophon wigetized">
 					<div class="background-footer"></div>
 					<div class="container">
-						<!--<div class="row noo-footer-main">
-							<div class="col-md-3 col-sm-6">
+						<div class="row noo-footer-main">
+							<!--<div class="col-md-3 col-sm-6">
 								<div class="widget widget_text">
 									<h4 class="widget-title">About Us</h4>
 									<div class="textwidget">
@@ -451,9 +461,9 @@
 										</p>
 									</div>
 								</div>
-							</div>
+							</div>-->
 							<div class="col-md-3 col-sm-6">
-								<div class="widget commerce widget_top_rated_products">
+								<!--<div class="widget commerce widget_top_rated_products">
 									<h4 class="widget-title">Top Rated Products</h4>
 									<ul class="product_list_widget">
 										<li>
@@ -487,9 +497,9 @@
 											<span class="amount">&pound;55.00</span>
 										</li>
 									</ul>
-								</div>
+								</div>-->
 							</div>
-							<div class="col-md-3 col-sm-6">
+							<!--<div class="col-md-3 col-sm-6">
 								<div class="widget tribe-events-adv-list-widget">
 									<h4 class="widget-title">Upcoming Events</h4>
 									<div class="tribe-mini-calendar-event">
@@ -554,22 +564,22 @@
 										<button disabled>Subscribe now</button>
 									</form>
 								</div>
-							</div>
-						</div>  -->
+							</div>-->
+						</div>  
 						<div class="noo-footer-bottom">
 							<div class="widget widget_noo_infomation">
 								<ul class="noo-infomation">
 									<li>
 										<span class="fa fa-map-marker infomation-left"></span>
-										<address>South Avenue a 34521 New York, USA </address>
+										<address>LewiMEDIA, Kasubi - Across from the Royal Tombs</address>
 									</li>
 									<li class="info-phone">
 										<span class="fa fa-phone infomation-left"></span>
-										<span>+84 123 456 789</span>
+										<span>+700-372491-Uganda- +1-770-4714051-USA-</span>										
 									</li>
 									<li class="info-mail">
 										<span class="fa fa-envelope-o infomation-left"></span>
-										<span><a href="mailto:email@domain.com">email@domain.com</a></span>
+										<span><a href="mailto:support&#64;lewimedia.website">support@lewimedia.website</a></span>
 									</li>
 								</ul>
 							</div>
