@@ -10097,6 +10097,10 @@ li.comment {
   display: inline-block;
   margin: 15px;
 }
+.pagination li {
+  display:inline-block;
+  padding:5px;
+}
 .loadmore-action,
 #infscr-loading,
 .loadmore-loading {

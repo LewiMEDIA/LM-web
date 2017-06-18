@@ -193,7 +193,7 @@
 		//Featured Album
 		if($('.noo-featured-albums').length > 0) {
 			$('.noo-featured-albums').owlCarousel({
-				items : 5,
+				items : 4,
 				itemsCustom : false,
 				itemsDesktop : [1320, 4],
 				itemsDesktopSmall : [1200, 3],
