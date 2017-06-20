@@ -20,6 +20,7 @@
 		<link rel="stylesheet" href="css/layout.css" type="text/css" media="all"/>
 
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Dosis:100,300,400,700,900,300italic,400italic,700italic,900italic" type="text/css" media="all"/>
+		<link type="text/css" rel="stylesheet" href="path_to/simplePagination.css"/>
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -96,12 +97,12 @@
 										</ul>
 									</li>
 									<li class="menu-item-has-children">
-										<a href="#">Events</a>
+										<a href="">Events</a>
 										<ul class="sub-menu">
 											<li><a href="event.html">Event List</a></li>
-											<li><a href="event-photo.html">Event Photo</a></li>
-											<li><a href="event-detail.html">Event Detail</a></li>
-											<!--<li><a href="archive-event.html">Archive Event</a></li>-->
+											<li><a href="event-photo.html">Event Photos</a></li>
+											<!--<li><a href="event-detail.html">Event Detail</a></li>
+											<li><a href="archive-event.html">Archive Event</a></li>-->
 										</ul>
 									</li>
 									<li class="current-menu-item menu-item-has-children">
@@ -122,10 +123,10 @@
 									</li>
 									<!--<li><a href="members.html">Members</a></li>-->
 									<li class="menu-item-has-children">
-										<a href="blog.html">Blog</a>
+										<a href="">Blogs</a>
 										<ul class="sub-menu">
-											<li><a href="blog-masonry.html">Blog 2 columns</a></li>
-											<li><a href="blog-detail.html">Single Post</a></li>
+											<li><a href="blog.html">Blog Main</a></li>
+											<li><a href="blog-masonry.html">Blog Detail</a></li>
 										</ul>
 									</li>
 									<li><a href="contact.html">Contact</a></li>
@@ -1229,18 +1230,31 @@
 		<script type="text/javascript" src="js/main.js"></script>
 		<script type="text/javascript" src="js/mediaelement-and-player.js"></script>
 		<script type="text/javascript" src="js/player.js"></script>
+		<script type="text/javascript" src="path_to/jquery.js"></script>
+		<script type="text/javascript" src="path_to/jquery.simplePagination.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>  
 		<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+	
 		
+			<script>
+		$(function() {
+    $(selector).pagination({
+        page: 4,
+		items: 100,
+        itemsOnPage: 10,
+        cssStyle: 'light-theme'
+    });
+});		
+</script>
 		
-	<script>
+	<!--<script>
 		var monkeyList = new List('noo_albums-wrap', {
   valueNames: ['pagn-pages-albums'],
   page: 3,
   pagination: true
 });
 		
-</script>
+</script>-->
 		
 	</body>
 </html>
