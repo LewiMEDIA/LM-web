@@ -6236,7 +6236,7 @@ textarea.donate-modal .modal-body .tab-content .donate-form-info input[type=text
  *  4.8 - footer
  */
 footer.colophon {
-  background-image: url('../images/footer-bg-1050x700.jpg');
+  background-image: url('../images/imageHeadphone20.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -6662,7 +6662,7 @@ a.go-to-top:hover a.go-to-top:focus.on:hover {
 }
 footer.colophon.site-info {
   background-color: #000000;
-  background-image: url('../images/footer-bg-1050x700.jpg');
+  background-image: url('../images/imageHeadphone13.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
