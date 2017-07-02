@@ -528,7 +528,7 @@ p {
 	line-height:1.4;
 }
 
-a:hover,a:focus,h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover,.h1 a:hover,.h2 a:hover,.h3 a:hover,.h4 a:hover,.h5 a:hover,.h6 a:hover {
+a:hover,a:focus:,h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover,.h1 a:hover,.h2 a:hover,.h3 a:hover,.h4 a:hover,.h5 a:hover,.h6 a:hover {
 	color:#d91f26;
 	text-decoration:none;
 }
@@ -14314,7 +14314,7 @@ h3.tribe-events-related-events-title {
 }
 .noo-sh-list-event .noo-shevent-content .sh-excerpt {
   margin-top: 18px;
-  color: #ffffff;
+  color: #FFFFFF;
   font-size: 16px;
   line-height: 24px;
 }
@@ -17911,7 +17911,7 @@ body.theme-light .noo-tabs-header li span.tab-active {
   color: #000000;
 }
 body.theme-light .noo-page-heading {
-  background-image: url(../images/bg-heading-default-1920x350.jpg);
+  background-image: url(../images/imageMusic5.jpg);
 }
 body.theme-light .commerce-cart table.shop_table td,
 body.theme-light .commerce-cart table.shop_table td a {
@@ -18037,6 +18037,10 @@ body.theme-light .commerce-cart table.shop_table td a:hover {
 .single .noo_album .album-intro .album-intro-wrap .album-purchase {
   padding: 25px 0;
 }
+
+.album-purchase2 {
+  padding: 25px 0;
+}
 .single .noo_album .album-intro .album-intro-wrap .album-purchase a {
   border: 1px solid #555555;
   color: #555555;
@@ -18044,11 +18048,27 @@ body.theme-light .commerce-cart table.shop_table td a:hover {
   margin-right: 5px;
   text-transform: uppercase;
 }
+
+.album-purchase2 a {
+  border: 1px solid #555555;
+  color: #555555;
+  padding: 5px 15px;
+  margin-right: 5px;
+  text-transform: uppercase;
+}
+
+
 .single .noo_album .album-intro .album-intro-wrap .album-purchase a:hover {
   background: #d91f26;
   color: #ffffff;
   border-color: #d91f26;
 }
+.album-purchase2 a:hover {
+  background: #d91f26;
+  color: #ffffff;
+  border-color: #d91f26;
+}
+
 .single .noo_album .album-summary .meta-summary {
   padding-top: 6px;
 }
