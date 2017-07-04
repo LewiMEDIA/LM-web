@@ -18842,3 +18842,18 @@ body.theme-light .commerce-cart table.shop_table td a:hover {
 .well{
 background-color: black !important;
 }
+
+.slide-item {
+    position: relative;
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+	margin: 0;
+	background:  rgb(0, 0, 0);
+    background:  rgba(0, 0, 0, 0.7);
+	font: normal;
+	
+}
