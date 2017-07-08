@@ -92,6 +92,7 @@ a {
 
 a:active,a:hover {
 	outline:0;
+	color: #f50c0c;
 }
 
 abbr[title] {
@@ -14226,13 +14227,13 @@ h3.tribe-events-related-events-title {
   transition: all 0.5s ease 0s;
 }
 .noo-sh-list-event .thumb-1 {
-  background-image: url('../images/event/ImageWhatsApp1.jpeg');
+  background-image: url('../images/event/WhatsAppImage2.jpeg');
 }
 .noo-sh-list-event .thumb-2 {
-  background-image: url('../images/event/Imagemusic2.jpg');
+  background-image: url('../images/event/WhatsAppImage3b.PNG');
 }
 .noo-sh-list-event .thumb-3 {
-  background-image: url('../images/event/Imagemusic4.jpg');
+  background-image: url('../images/event/WhatsAppImage4.jpeg');
 }
 .noo-sh-list-event .thumb-4 {
   background-image: url('../images/event/imageGospel1.jpg');
@@ -18857,3 +18858,18 @@ background-color: black !important;
 	font: normal;
 	
 }
+
+ .bs-example{
+    	margin: 20px;
+    }
+    .panel-title .glyphicon{
+        font-size: 14px;
+		color: #000000
+    }
+		.panel-body {
+        color: #000000
+		background:  rgb(0, 0, 0);
+    	background:  rgba(0, 0, 0, 0.7);
+		
+		
+    }
